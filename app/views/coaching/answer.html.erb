@@ -1,0 +1,15 @@
+<ul>
+
+  <li><%="You: #{@query}"%></li>
+  <li>
+  <%=if @query.include? "work"
+    "Coach: Good, get going!"
+  else
+    "Coaach: I don't care, go to work!"
+  end%>
+  </li>
+
+</ul>
+
+
+<%= link_to "Ask new question", '/ask' %>
